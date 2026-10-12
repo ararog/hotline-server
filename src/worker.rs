@@ -1,5 +1,5 @@
 use crate::{reader::Reader, writer::Writer};
-use crossfire::{MAsyncRx, MAsyncTx, mpmc, mpsc, spsc};
+use crossfire::{MAsyncRx, MAsyncTx, mpmc, mpsc};
 use hotline_core::{Command, HotlineError, SystemMessage};
 use wtransport::{RecvStream, SendStream};
 

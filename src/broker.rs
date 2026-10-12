@@ -1,4 +1,4 @@
-use crossfire::{AsyncTx, MAsyncRx, MAsyncTx, mpmc, mpsc};
+use crossfire::{MAsyncRx, MAsyncTx, mpmc, mpsc};
 use hotline_core::{Command, HotlineError, PublishCommand, SubscribeCommand, SystemMessage};
 use std::collections::HashMap;
 

@@ -11,10 +11,10 @@ impl Reader {
 
     pub async fn run(
         &self,
-        mut send_stream: SendStream,
+        mut _send_stream: SendStream,
         receiver: AsyncRx<mpsc::Array<Command>>,
     ) -> Result<(), HotlineError> {
-        while let Ok(command) = receiver.recv().await {
+        while let Ok(_command) = receiver.recv().await {
             //
         }
         Ok(())
