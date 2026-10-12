@@ -1,0 +1,24 @@
+[package]
+name = "hotline-server"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.86"
+
+[dependencies]
+asyncband = { version = "0.7.3", features = ["broadcast"] }
+bitcode = "0.6.9"
+bytes = "1.12.1"
+crossfire = "3.1.20"
+hotline-core = { path = "../hotline-core" }
+http = "1.5.0"
+rustls = "0.23.45"
+rustls-native-certs = "0.8.4"
+tokio = { version = "1.53.2", features = [
+    "fs",
+    "rt",
+    "signal",
+    "macros",
+    "io-std",
+    "rt-multi-thread",
+] }
+wtransport = "0.7.2"
