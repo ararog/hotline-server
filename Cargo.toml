@@ -5,7 +5,7 @@ edition = "2024"
 rust-version = "1.86"
 
 [dependencies]
-asyncband = { version = "0.7.3", features = ["broadcast"] }
+asyncband = { version = "0.8.0", features = ["broadcast"] }
 bitcode = "0.6.9"
 bytes = "1.12.1"
 crossfire = "3.1.20"
